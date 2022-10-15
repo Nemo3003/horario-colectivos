@@ -1,5 +1,5 @@
 {
-    "salidas-semana":[
+    "salidasSemana":[
         {
             "hora": "5:00 am"
         },
@@ -182,7 +182,7 @@
         }
 
     ],
-    "salidas-finde":[
+    "salidasFinde":[
         {
             "hora": "05:00 am"
         },

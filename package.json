@@ -1,0 +1,23 @@
+{
+  "name": "horario-colectivos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nemo3003/horario-colectivos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nemo3003/horario-colectivos/issues"
+  },
+  "homepage": "https://github.com/Nemo3003/horario-colectivos#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}

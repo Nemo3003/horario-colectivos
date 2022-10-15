@@ -1,6 +1,6 @@
 "use strict";
 
-const apiURL = "../db/hr-tir-res.json";
+const apiURL = "../db/hrTirRes.json";
 fetch(apiURL)
     .then((response) => response.json())
     .then((data) => Cards (data.results));

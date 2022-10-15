@@ -87,7 +87,10 @@ nav {
     -webkit-transform: translateY(-10px) rotate(-45deg);
     -webkit-transition: -webkit-transform .3s ease-out;
 }
-
+.cool-one{
+    display: flex;
+    justify-content: space-around;
+}
 .nav {
     z-index: 2;
     padding: 0;
@@ -170,3 +173,4 @@ h1{
   text-align:center;
   margin-top:20px;
 }
+

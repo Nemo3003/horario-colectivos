@@ -22,6 +22,13 @@ html {
     -webkit-text-size-adjust: 100%;
     
 }
+/*Vacation schedule*/
+.btn-vacas{
+    text-decoration: none;
+    color: #8ebdcf;
+    font-weight: bold;
+    word-break: break-all;
+}
 
 /* MOBILE DISPLAY */
 nav {

@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
     
     <!-- Google Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6847339289738909" crossorigin="anonymous"></script>
@@ -20,17 +20,17 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Horarios de Colectivos</a>
+                <a class="navbar-brand" href="../../index.html">Horarios de Colectivos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">A Resistencia</a>
+                            <a class="nav-link" href="../semanal/tirol.html">A Resistencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="resistencia.html">A Tirol</a>
+                            <a class="nav-link" href="../semanal/resistencia.html">A Tirol</a>
                         </li>
                     </ul>
                 </div>
@@ -40,14 +40,27 @@
 
     <!-- Main Content -->
     <div class="container text-center my-5">
-        <div class="d-block d-md-none my-4">
-            <div class="btn-group btn-group-lg w-100" role="group" aria-label="Horarios Alternativos">
-                <!-- El botón de Sábado apunta ahora a la sección de Fin de Semana -->
-                <a href="#fin-de-semana" class="btn btn-primary shadow-sm">Sábado</a>
-                <a href="domingo/resdomingo.html" class="btn btn-success shadow-sm">Domingo</a>
-                <a href="vacas/resvacas.html" class="btn btn-warning shadow-sm">Vac.</a>
+        <div class="container my-5 d-flex justify-content-center align-items-center">
+            <div>
+                <!-- Desktop Buttons -->
+                <div class="d-none d-md-block my-4">
+                    <div class="btn-group btn-group-lg">
+                        <a href="../domingo/resdomingo.html" class="btn btn-success shadow-sm">Domingo</a>
+                        <a href="../vacas/resvaca.html" class="btn btn-warning shadow-sm">Vacaciones</a>
+                    </div>
+                </div>
+        
+                <!-- Mobile Buttons (optional) -->
+                <div class="d-block d-md-none my-4">
+                    <div class="btn-group btn-group-lg">
+                        <a href="#fin-de-semana" class="btn btn-primary shadow-sm">Sábado</a>
+                        <a href="../domingo/resdomingo.html" class="btn btn-success shadow-sm">Domingo</a>
+                        <a href="../vacas/resvaca.html" class="btn btn-warning shadow-sm">Vac.</a>
+                    </div>
+                </div>
             </div>
         </div>
+        
         <h1>Horarios: Resistencia a Tirol</h1>
         <div id="next-bus" class="alert alert-info"></div>
         
@@ -203,8 +216,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom Scripts -->
-    <script src="./js/restir.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/hours-t.js"></script>
+    <script src="../../js/tirres.js"></script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/hours-t.js"></script>
 </body>
 </html>

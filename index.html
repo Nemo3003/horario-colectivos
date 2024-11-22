@@ -16,6 +16,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6847339289738909" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,6 +44,15 @@
 
     <!-- Main Content -->
     <div class="container text-center my-5">
+        <!-- Quick Access Buttons for Mobile -->
+        <div class="d-block d-md-none my-4">
+            <div class="btn-group btn-group-lg w-100" role="group" aria-label="Horarios Alternativos">
+                <!-- El botón de Sábado apunta ahora a la sección de Fin de Semana -->
+                <a href="#fin-de-semana" class="btn btn-primary shadow-sm">Sábado</a>
+                <a href="domingo/tirdomingo.html" class="btn btn-success shadow-sm">Domingo</a>
+                <a href="vacas/tirvacas.html" class="btn btn-warning shadow-sm">Vac.</a>
+            </div>
+        </div>
         <h1>Horarios: Tirol A Resistencia</h1>
         <div id="next-bus" class="alert alert-info"></div>
         
@@ -124,8 +134,11 @@
                 </table>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" id="fin-de-semana">
                 <h3>Fin de Semana</h3>
+                <div class="mt-4">
+                    <a href="domingo/tirdomingo.html" class="btn btn-primary">Horario de domingo</a>
+                </div>
                 <table class="table table-dark table-striped table-bordered schedule-table">
                     <thead>
                         <tr>

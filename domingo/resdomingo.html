@@ -38,7 +38,6 @@
           -webkit-text-size-adjust: 100%;
       }
 
-      /*Vacation schedule*/
       .btn-vacas {
           text-decoration: none;
           color: #8ebdcf;
@@ -75,15 +74,13 @@
 
             // Bus schedule times in 24-hour format (HH:MM)
             const schedule = [
-            "04:30", "05:00", "05:30", "05:40", "06:00", "06:40", "07:00", "07:40",
-            "08:00", "08:20", "08:40", "09:00", "09:20", "09:40", "10:00", "10:15",
-            "10:30", "10:45", "11:00", "11:20", "11:40", "12:00", "12:10",
-            "12:25", "12:50", "13:20", "13:50", "14:20", "15:00", "15:30",
-            "15:45", "16:00", "16:25", "16:50", "17:10", "17:30", "17:45",
-            "18:00", "18:15", "18:30", "18:50", "19:10", "19:30", "19:50",
-            "20:10", "20:30", "20:50", "21:10", "21:40", "22:10", "22:50",
-            "23:30", "00:15"
+                "04:40", "05:20", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30",
+                "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:40",
+                "13:20", "14:00", "14:40", "15:20", "16:00", "16:30", "17:00", "17:30",
+                "18:00", "18:30", "19:00", "19:30", "20:00", "20:40", "21:20", "21:50",
+                "22:40", "23:15", "00:15"
             ];
+
 
             // Convert schedule to an array of objects with hour and minute properties
             const times = schedule.map(time => {
@@ -137,7 +134,7 @@
 
     <!-- Main Content Section -->
     <main class="container mt-5">
-        <h1 class="text-center">Resistencia a Tirol - Vacaciones</h1>
+        <h1 class="text-center">Resistencia a Tirol - Domingo</h1>
         
         <!-- Display next bus -->
         <div class="container text-center my-4">
@@ -153,64 +150,44 @@
           <table class="table table-dark table-striped table-bordered schedule-table">
                 <thead class="table-dark">
                     <tr>
-                        <th scope="col">SEMANAL</th>
+                        <th scope="col">DOMINGO</th>
                     </tr>
                 </thead>
                 <tbody>
-                  <tr><td>4:30</td></tr>
-                  <tr><td>5:00</td></tr>
-                  <tr><td>5:30</td></tr>
-                  <tr><td>5:40</td></tr>
+                  <tr><td>4:40</td></tr>
+                  <tr><td>5:20</td></tr>
                   <tr><td>6:00</td></tr>
-                  <tr><td>6:40</td></tr>
+                  <tr><td>6:30</td></tr>
                   <tr><td>7:00</td></tr>
-                  <tr><td>7:40 </td></tr>
+                  <tr><td>7:30</td></tr>
                   <tr><td>8:00</td></tr>
-                  <tr><td>8:20</td></tr>
-                  <tr><td>8:40</td></tr>
+                  <tr><td>8:30</td></tr>
                   <tr><td>9:00</td></tr>
-                  <tr><td>9:20</td></tr>
-                  <tr><td>9:40</td></tr>
+                  <tr><td>9:30</td></tr>
                   <tr><td>10:00</td></tr>
-                  <tr><td>10:15</td></tr>
                   <tr><td>10:30</td></tr>
-                  <tr><td>10:45</td></tr>
                   <tr><td>11:00</td></tr>
-                  <tr><td>11:20</td></tr>
-                  <tr><td>11:40</td></tr>
-                  <tr><td>************</td></tr>
+                  <tr><td>11:30</td></tr>
                   <tr><td>12:00</td></tr>
-                  <tr><td>12:10</td></tr>
-                  <tr><td>12:25</td></tr>
-                  <tr><td>12:50</td></tr>
+                  <tr><td>12:40</td></tr>
                   <tr><td>13:20</td></tr>
-                  <tr><td>13:50</td></tr>
-                  <tr><td>14:20</td></tr>
-                  <tr><td>15:00</td></tr>
-                  <tr><td>15:30</td></tr>
-                  <tr><td>15:45</td></tr>
+                  <tr><td>14:00</td></tr>
+                  <tr><td>14:40</td></tr>
+                  <tr><td>15:20</td></tr>
                   <tr><td>16:00</td></tr>
-                  <tr><td>16:25</td></tr>
-                  <tr><td>16:50</td></tr>
-                  <tr><td>17:10</td></tr>
+                  <tr><td>16:30</td></tr>
+                  <tr><td>17:00</td></tr>
                   <tr><td>17:30</td></tr>
-                  <tr><td>17:45</td></tr>
                   <tr><td>18:00</td></tr>
-                  <tr><td>18:15</td></tr>
                   <tr><td>18:30</td></tr>
-                  <tr><td>18:50</td></tr>
-                  <tr><td>19:10</td></tr>
+                  <tr><td>19:00</td></tr>
                   <tr><td>19:30</td></tr>
-                  <tr><td>19:50</td></tr>
-                  <tr><td>20:10</td></tr>
-                  <tr><td>20:30</td></tr>
-                  <tr><td>20:50</td></tr>
-                  <tr><td>21:10</td></tr>
-                  <tr><td>21:40</td></tr>
-                  <tr><td>22:10</td></tr>
-                  <tr><td>22:50</td></tr>
-                  <tr><td>22:30</td></tr>
-                  <tr><td>***********</td></tr>
+                  <tr><td>20:00</td></tr>
+                  <tr><td>20:40</td></tr>
+                  <tr><td>21:20</td></tr>
+                  <tr><td>21:50</td></tr>
+                  <tr><td>22:40</td></tr>
+                  <tr><td>23:15</td></tr>
                   <tr><td>00:15</td></tr>
                 </tbody>
             </table>

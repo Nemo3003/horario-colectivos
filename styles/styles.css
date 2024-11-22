@@ -16,6 +16,35 @@ body {
     color: #DADFE1;
 }
 
+/* Aseguramos que los botones tengan el mismo tamaño y estén distribuidos uniformemente */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-group .btn {
+    flex: 1; /* Hace que los botones ocupen todo el espacio disponible de manera equitativa */
+    margin: 0 5px; /* Añadimos un pequeño margen entre los botones */
+    text-align: center; /* Alinea el texto del botón al centro */
+}
+
+/* Aseguramos que los botones sean suficientemente grandes en pantallas pequeñas */
+.d-block.d-md-none .btn {
+    font-size: 1.2rem; /* Tamaño de texto más grande para la vista móvil */
+    padding: 10px 15px; /* Más espacio dentro del botón para hacerlo más visible */
+}
+
+/* Estilo adicional para hacer que se vean más atractivos */
+.btn-primary, .btn-success, .btn-warning {
+    transition: all 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-warning:hover {
+    transform: scale(1.05); /* Efecto de aumento cuando el usuario pasa el mouse por encima */
+}
+
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
